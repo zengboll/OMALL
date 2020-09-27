@@ -6,12 +6,18 @@
 # @FileName:  run_case.py
 # @Project: SublimeWorkSpace
 # @Last Modified by:   zengqiu
-# @Last Modified time: 2020-09-15 18:29:31
+# @Last Modified time: 2020-09-27 19:26:35
 '''
 
+import os
 import pytest
+import allure
 
 if __name__ == '__main__':
-	pytest.main(['-s','test_case/test_home_page.py'])
+	#pytest.main(['-s','test_case'])
+	pytest.main(['--alluredir', './allure_data'])
+	import time
+	time.sleep(5)
+	os.system('allure generate ./allure_data -o ./report --clean')
 
 

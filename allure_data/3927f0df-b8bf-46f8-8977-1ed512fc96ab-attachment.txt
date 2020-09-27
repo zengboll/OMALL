@@ -1,0 +1,4 @@
+查找所有元素：('id', 'com.msyc.onion:id/tv_title')第0次
+<appium.webdriver.webelement.WebElement (session="3a6b5bb6-c99d-4214-af7c-07c82b2147e6", element="aca7981f-c9e4-4ad3-ac0f-e6818aabfb37")>
+成为会员
+查找所有元素：('id', 'com.msyc.onion:id/tv_title')第0次
