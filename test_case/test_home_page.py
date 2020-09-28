@@ -6,7 +6,7 @@
 # @FileName:  test_home_page.py
 # @Project: SublimeWorkSpace
 # @Last Modified by:   zengqiu
-# @Last Modified time: 2020-09-28 11:48:18
+# @Last Modified time: 2020-09-28 12:27:29
 '''
 import allure
 
@@ -37,8 +37,8 @@ class TestHomePage():
 
 
 	@allure.story("成为店主")
-	@allure.title("首页进入成为店主页面")
-	def test_become_member(self, driver):
+	@allure.title("首页进入成为店主页面2")
+	def test_become_member2(self, driver):
 		"""用例描述：首页进入成为会员页
 		"""
 		with allure.step("1-实例化Driver"):
