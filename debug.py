@@ -6,7 +6,8 @@
 # @FileName:  debug.py
 # @Project: SublimeWorkSpace
 # @Last Modified by:   zengqiu
-# @Last Modified time: 2020-09-15 16:11:43
+# @Last Modified time: 2020-09-28 18:29:07
 '''
+import os
 
-
+os.system(f'allure serve "D:\\SublimeWorkSpace\\OMALL\\allure_data"')
