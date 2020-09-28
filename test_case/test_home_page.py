@@ -6,7 +6,7 @@
 # @FileName:  test_home_page.py
 # @Project: SublimeWorkSpace
 # @Last Modified by:   zengqiu
-# @Last Modified time: 2020-09-27 16:34:57
+# @Last Modified time: 2020-09-28 11:48:18
 '''
 import allure
 
@@ -32,8 +32,22 @@ class TestHomePage():
 			print(el)
 			print(el.text)
 			driver.click(loc=loc, index=9)
-		with allure.step("3-截图"):
-			pass
-		with allure.step("4-断言"):
+		with allure.step("3-断言"):
 			assert 1 == 2
 
+
+	@allure.story("成为店主")
+	@allure.title("首页进入成为店主页面")
+	def test_become_member(self, driver):
+		"""用例描述：首页进入成为会员页
+		"""
+		with allure.step("1-实例化Driver"):
+			driver = driver
+		with allure.step("2-查找和点击首页成为会员元素"):
+			loc = ("id", "com.msyc.onion:id/tv_title")
+			el = driver.find_elements(loc=loc)[9]
+			print(el)
+			print(el.text)
+			driver.click(loc=loc, index=9)
+		with allure.step("3-断言"):
+			assert 1 == 1
